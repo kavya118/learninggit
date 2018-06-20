@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Expense Tracker</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="budget">Budget</string>
+    <string name="summary">Summary</string>
+    <string name="cal">Calender</string>
+    <string name="chart">Chart</string>
+    <string name="account">Account</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="name">Name</string>
+    <string name="desc">Description</string> 
+    <string name="init">Initial Balance</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="pl">+</string>
+    <string name="min">-</string>
+    <string name="mul">*</string>
+    <string name="div">/</string>
+    <string name="dot">.</string>
+    <string name="delete_numbers">"\u21D0"</string>
+    <string name="Ok">OK</string>
+    <string name="sqrt">sqrt</string>
+    <string name="mod">%</string>
+    <string name="equal">=</string>
+    <string name="date">Date</string>
+    <string name="amount">Amount</string>
+    <string name="payer">Payer</string>
+    <string name="payee">Payee</string>
+    <string name="arrow">></string>
+    <string name="catg">Category</string>
+    <string name="pay">Payment Method</string>
+
+    <string name="back">Back</string>
+    <string name="no_pay">No. of Payments</string>
+    <string name="freq">Frequency</string>
+    <string name="frst">Frist Pay on</string>
+    <string name="rem">Reminder</string>
+    <string name="time">Time</string>
+     <string name="principal">Principal Amount</string>
+     <string name="deposit">Monthly Deposit</string>
+     <string name="month">Months</string>
+     <string name="rate">Annual Interest Rate(%)</string>
+     <string name="comp">Compounding</string>
+     <string name="table">Table</string>
+     <string name="calcu">Calculate</string>
+    <string name="ans"/>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Account</item>
+        <item >Reminder</item>
+        <item >Notes</item>
+        <item >Tools</item>
+        <item >Settings</item>
+        <item >About</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_home</item>
+        <item>@drawable/reminder</item>
+        <item>@drawable/notes</item>
+        <item>@drawable/tool</item>
+        <item>@drawable/setting</item>
+        <item>@drawable/ic_launcher</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <!-- Frequency spinner -->
+    <array name="frequency">
+        <item>Every 4 Weeks</item>
+        <item>Monthly</item>
+        <item>Quaterly</item>
+        <item>Every 6 Months</item>
+        <item>Yearly</item>
+        <item>Once Only</item>
+    </array>
+    <string-array name="IncomeCategory">
+        <item >Salary</item>
+        <item >Personal Savings</item>
+        <item >Rents</item>
+        <item >Part-time work</item>
+        <item >Pensions</item>
+        <item >Social Security</item>
+        <item >Equities</item>
+        <item >Annuities</item>
+    </string-array>
+    <string-array name="Compounding">
+        <item >Daily</item>
+        <item >Monthly</item>
+        <item >Quaterly</item>
+        <item >Semiannually</item>
+        <item >Yearly</item>
+        <item >No Compound</item>
+    </string-array>
+    
+</resources>

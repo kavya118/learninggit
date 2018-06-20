@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.project.expensetracker.MainActivity" >
+    <item android:id="@+id/exit" android:orderInCategory="100" android:title="@string/exit"></item>
+  <item
+        android:id="@+id/edit"
+        android:title="@string/edit"
+        android:icon="@drawable/add"
+        android:showAsAction="ifRoom"
+        />  
+<item
+        android:id="@+id/add"
+        android:title="@string/add"
+        android:icon="@drawable/add"
+        android:showAsAction="ifRoom"
+        />
+  
+</menu>

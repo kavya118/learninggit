@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/txtRemDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/desc"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editRemDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/txtRemDesc"
+            android:layout_toRightOf="@+id/txtRemDesc"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtRemAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtRemDesc"
+            android:layout_alignRight="@+id/txtRemDesc"
+            android:layout_below="@+id/editRemDesc"
+            android:layout_marginTop="20dp"
+            android:text="@string/amount"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editRemAmt"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtRemAmt"
+            android:layout_alignLeft="@+id/editRemDesc"
+            android:layout_alignStart="@+id/editRemDesc"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnRemAmt"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/editRemAmt"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_other"
+            android:text="@string/arrow"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textRemNoPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtRemAmt"
+            android:layout_alignRight="@+id/txtRemAmt"
+            android:layout_below="@+id/txtRemAmt"
+            android:layout_marginTop="20dp"
+            android:text="@string/no_pay"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editremNoPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textRemNoPay"
+            android:layout_alignLeft="@+id/editRemAmt"
+            android:layout_alignStart="@+id/editRemAmt"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtRemFreq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textRemNoPay"
+            android:layout_alignRight="@+id/textRemNoPay"
+            android:layout_below="@+id/textRemNoPay"
+            android:layout_marginTop="20dp"
+            android:text="@string/freq"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spnFreq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtRemFreq"
+            android:layout_alignLeft="@+id/editremNoPay"
+            android:layout_alignStart="@+id/txtRemFreq"
+            android:layout_below="@+id/editremNoPay"
+            android:entries="@array/frequency"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtRemFrst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRemFreq"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/editRemDesc"
+            android:layout_toStartOf="@+id/editRemDesc"
+            android:text="@string/frst"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/editRemFrst"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtRemFrst"
+            android:layout_alignBottom="@+id/txtRemFrst"
+            android:layout_alignLeft="@+id/spnFreq"
+            android:layout_alignStart="@+id/spnFreq"
+            android:text="Sfvgbgfbhgnh"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnRemFrst"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/editRemFrst"
+            android:layout_alignLeft="@+id/btnRemAmt"
+            android:layout_alignStart="@+id/btnRemAmt"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_other"
+            android:text="@string/arrow"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtRemPayee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRemFrst"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/editRemDesc"
+            android:layout_toStartOf="@+id/editRemDesc"
+            android:text="@string/payee"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editRemPayee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtRemPayee"
+            android:layout_alignLeft="@+id/editRemFrst"
+            android:layout_alignStart="@+id/editRemFrst"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtRemCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRemPayee"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/editRemDesc"
+            android:layout_toStartOf="@+id/editRemDesc"
+            android:text="@string/catg"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/spnRemCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtRemCat"
+            android:layout_alignLeft="@+id/editRemPayee"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/editRemPayee"
+            android:layout_below="@+id/editRemPayee"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtRem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtRemCat"
+            android:layout_alignRight="@+id/txtRemCat"
+            android:layout_below="@+id/txtRemCat"
+            android:layout_marginTop="20dp"
+            android:text="@string/rem"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/spnRem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtRem"
+            android:layout_alignLeft="@+id/editRemPayee"
+            android:layout_alignStart="@+id/editRemPayee"
+            android:layout_below="@+id/spnRemCat"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRem"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/editRemDesc"
+            android:layout_toStartOf="@+id/editRemDesc"
+            android:text="@string/time"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/spnTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtTime"
+            android:layout_alignLeft="@+id/spnRem"
+            android:layout_alignStart="@+id/spnRem"
+            android:layout_below="@+id/spnRem" />
+
+    </RelativeLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnCncl"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/button_other"
+            android:text="@string/back"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnOk"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_other"
+            android:text="@string/ok"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/editIncdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtDate"
+            android:layout_alignBottom="@+id/txtDate"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/txtDate"
+            android:layout_toRightOf="@+id/txtDate"
+            android:text="@string/date"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btnIncDate"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/editIncdate"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_other"
+            android:text="@string/arrow"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtIncAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDate"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/editIncdate"
+            android:layout_toStartOf="@+id/editIncdate"
+            android:text="@string/amount"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editIncAmt"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtIncAmt"
+            android:layout_alignLeft="@+id/editIncdate"
+            android:layout_alignStart="@+id/editIncdate"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnIncAmt"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/editIncAmt"
+            android:layout_alignLeft="@+id/btnIncDate"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/btnIncDate"
+            android:background="@drawable/button_other"
+            android:text="@string/arrow"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txtIncPayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtIncAmt"
+            android:layout_alignRight="@+id/txtIncAmt"
+            android:layout_below="@+id/txtIncAmt"
+            android:layout_marginTop="30dp"
+            android:text="@string/payer"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editIncPayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtIncPayer"
+            android:layout_alignLeft="@+id/editIncAmt"
+            android:layout_alignStart="@+id/editIncAmt"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtIncCatg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtIncPayer"
+            android:layout_alignRight="@+id/txtIncPayer"
+            android:layout_below="@+id/txtIncPayer"
+            android:layout_marginTop="30dp"
+            android:text="@string/catg"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtIncCatg"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignStart="@+id/txtIncCatg"
+            android:layout_below="@+id/txtIncCatg"
+            android:layout_marginTop="26dp"
+            android:text="@string/pay"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="90dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/date"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtIncDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtIncCatg"
+            android:layout_alignRight="@+id/txtIncCatg"
+            android:layout_below="@+id/txtPay"
+            android:layout_marginTop="30dp"
+            android:text="@string/desc"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editIncDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtIncDesc"
+            android:layout_alignStart="@+id/txtIncDesc"
+            android:layout_below="@+id/txtIncDesc"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/btnIncCam"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/editIncDesc"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="Attach Image"
+            android:src="@drawable/ic_camera" />
+
+        <Spinner
+            android:id="@+id/spnIncCatg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editIncPayer"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/editIncPayer"
+            android:layout_below="@+id/editIncPayer"
+            android:popupBackground="@color/list_background"
+            android:text="@string/catg"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="22dp"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/spnIncPay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spnIncCatg"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/sIncCatg"
+            android:layout_below="@+id/spnIncCatg"
+            android:entries="@array/frequency"
+            android:popupBackground="@color/list_background"
+            android:layout_marginTop="6dp"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnCncl"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/button_other"
+            android:text="@string/back"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnOk"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_other"
+            android:text="@string/ok"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
